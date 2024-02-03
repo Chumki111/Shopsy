@@ -1,4 +1,5 @@
 import Banner from "../../Components/HomeComponents/Banner";
+import Products from "../../Components/HomeComponents/Products";
 
 
 
@@ -7,7 +8,7 @@ const Home = () => {
         <div>
             
          <Banner/>
-         
+         <Products/>
         </div>
     );
 };
