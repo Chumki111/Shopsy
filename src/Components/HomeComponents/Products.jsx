@@ -1,4 +1,7 @@
+
+
 import { FaStar } from "react-icons/fa";
+
 const data = [
     {
         id: 1,
@@ -64,14 +67,16 @@ const data = [
 ]
 
 const Products = () => {
+
     return (
         <div className="mt-14 mb-12">
             <div className="container">
                 {/* header section */}
                 <div className="text-center mb-10 max-w-[600px] mx-auto">
                     <p className="text-sm text-primary">Top Selling Products for you</p>
-                    <h1 className="text-3xl font-bold">Products</h1>
-                    <p className="text-xs text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit </p>
+                    <h1 className="text-3xl font-bold" 
+                        >Products</h1>
+                    <p className="text-xs text-gray-400" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit </p>
                 </div>
                 {/* body section */}
                 <div>
@@ -79,7 +84,11 @@ const Products = () => {
                         {/* card section */}
                         {
                             data.map((product) => (
-                                <div key={product.id} className=" px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-delay={product.aosDelay}
+
+                                    key={product.id} className=" px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md">
                                     {/* Card Image */}
                                     <img className="w-[300px] bg-gray-400 rounded-2xl" src={product.img} alt="" />
                                     {/* Card Heading */}
@@ -87,27 +96,27 @@ const Products = () => {
                                         <h2 className="text-slate-800 font-medium md:text-xl sm:text-lg pt-3">{product.title}</h2>
                                         {/* rating  */}
                                         <div className="flex gap-1 text-primary py-3">
-                                            <FaStar/>
-                                            <FaStar/>
-                                            <FaStar/>
-                                            
+                                            <FaStar />
+                                            <FaStar />
+                                            <FaStar />
+
                                         </div>
                                     </div>
                                     {/* Price and action button */}
                                     <div className="mt-5 flex justify-between items-center font-medium pb-3">
-                                        
+
                                         <h2 className="md:text-xl text-gray-800">${product.newPrice}</h2>
                                         <h2 className="md:text-xl text-gray-800 line-through">{product.prevPrice}</h2>
-                                        
+
                                     </div>
                                 </div>
                             ))
                         }
-                        
+
                     </div>
-                   <div className="flex justify-center items-center my-7">
-                   <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded">View All Products</button>
-                   </div>
+                    <div className="flex justify-center items-center my-7">
+                        <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded">View All Products</button>
+                    </div>
                 </div>
             </div>
         </div>
