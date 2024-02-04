@@ -51,7 +51,7 @@ const TopProducts = () => {
         <div>
             <div className="container">
                 {/* header section */}
-                <div className="text-left mb-24">
+                <div className="text-left mb-24" data-aos="fade-up">
                     <p className="text-sm text-primary">Top Rated Products for you</p>
                     <h1 className="text-3xl font-bold"
                     >Best Products</h1>

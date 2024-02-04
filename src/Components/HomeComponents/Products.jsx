@@ -3,6 +3,7 @@
 import { FaStar } from "react-icons/fa";
 import AOS from "aos";
 import { useEffect } from "react";
+import Aos from "aos";
 const data = [
     {
         id: 1,
@@ -53,18 +54,7 @@ const data = [
         color: "black",
         category: "sneakers",
     },
-    {
-        id: 5,
-        img: "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
-        title: "Flat Slip On Pumps",
-        star: 4,
-        reviews: "(123 reviews)",
-        prevPrice: "140,00",
-        newPrice: "200",
-        company: "Vans",
-        color: "green",
-        category: "flats",
-    }
+    
 ]
 
 const Products = () => {
@@ -76,16 +66,19 @@ const Products = () => {
             delay:100
         });
     })
+    useEffect(() =>{
+        Aos.init()
+      },[])
 
     return (
         <div className="mt-14 mb-12">
             <div className="container">
                 {/* header section */}
                 <div className="text-center mb-10 max-w-[600px] mx-auto">
-                    <p className="text-sm text-primary">Top Selling Products for you</p>
+                    <p className="text-sm text-primary" data-aos="fade-up">Top Selling Products for you</p>
                     <h1 className="text-3xl font-bold" 
-                        >Products</h1>
-                    <p className="text-xs text-gray-400" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit </p>
+                        data-aos="fade-up">Products</h1>
+                    <p className="text-xs text-gray-400" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit </p>
                 </div>
                 {/* body section */}
                 <div>
