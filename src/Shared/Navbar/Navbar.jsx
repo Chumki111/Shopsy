@@ -4,6 +4,8 @@ import { FaShoppingCart } from "react-icons/fa";
 import DarkMode from "../../Components/DarkMode/DarkMode";
 import { FaCaretDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Menu = [
     {
@@ -30,6 +32,9 @@ const dropDownLink = [
     }
 ]
 const Navbar = () => {
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return (
         <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
             {/* upper navbar */}
@@ -63,7 +68,7 @@ const Navbar = () => {
             </div>
             {/* lower navbar */}
             <div className="flex justify-center">
-                <ul className="sm:flex items-center gap-4 py-1">
+                <ul className="sm:flex items-center gap-4 py-1" data-aos="zoom-in">
                     {
                         Menu.map((data) => (
                             <li key={data.id}>

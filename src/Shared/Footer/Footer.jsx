@@ -9,9 +9,9 @@ import { FaMobileAlt } from "react-icons/fa";
 import { useEffect } from 'react';
 import Aos from 'aos';
 const Footer = () => {
-    useEffect(() =>{
+    useEffect(() => {
         Aos.init()
-      },[])
+    }, [])
     const FooterImage = {
         backgroundImage: `url(${footer})`,  // Corrected typo here
         backgroundPosition: 'bottom',
@@ -50,11 +50,10 @@ const Footer = () => {
     return (
         <div className='text-white mb-20' style={FooterImage}>
             <div className='container'>
-
                 <div className='grid md:grid-cols-3 pb-44 pt-5' data-aos="zoom-in">
                     {/* company details */}
                     <div className='py-8 px-4'>
-                    <a href="" className="font-bold text-2xl sm:text-3xl flex gap-2">
+                        <a href="" className="font-bold text-2xl sm:text-3xl flex gap-2">
                             <GiDiscGolfBag className="text-primary text-3xl" />Shopsy
                         </a>
                         <p className='py-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus blanditiis ullam perferendis commodi maxime culpa?</p>
@@ -66,7 +65,7 @@ const Footer = () => {
                                 <h1 className='sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3'>Important Links</h1>
                                 <ul className='flex flex-col gap-3'>
                                     {
-                                        footerLinks.map((data) =>(
+                                        footerLinks.map((data) => (
                                             <li key={data.id} className='cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200'>
                                                 <span>{data.name}</span>
                                             </li>
@@ -80,7 +79,7 @@ const Footer = () => {
                                 <h1 className='sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3'>Links</h1>
                                 <ul className='flex flex-col gap-3'>
                                     {
-                                        footerLinks.map((data) =>(
+                                        footerLinks.map((data) => (
                                             <li key={data.id} className='cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200'>
                                                 <span>{data.name}</span>
                                             </li>
@@ -93,24 +92,24 @@ const Footer = () => {
                         <div>
                             <div className='flex items-center gap-3 mt-6'>
                                 <a href="#">
-                                 <FaInstagram className='text-3xl'/>
+                                    <FaInstagram className='text-3xl' />
                                 </a>
                                 <a href="#">
-                                 <FaFacebook className='text-3xl'/>
+                                    <FaFacebook className='text-3xl' />
                                 </a>
                                 <a href="#">
-                                 <FaLinkedin className='text-3xl'/>
+                                    <FaLinkedin className='text-3xl' />
                                 </a>
 
                             </div>
                             <div className='mt-6'>
                                 <div className='flex items-center gap-3 mt-3'>
-                 <FaLocationArrow />
-                 <p>Noida, Uttar Pradesh</p>
+                                    <FaLocationArrow />
+                                    <p>Noida, Uttar Pradesh</p>
                                 </div>
                                 <div className='flex items-center gap-3 mt-3'>
-                 <FaMobileAlt />
-                 <p>+91 123456789</p>
+                                    <FaMobileAlt />
+                                    <p>+91 123456789</p>
                                 </div>
 
                             </div>
