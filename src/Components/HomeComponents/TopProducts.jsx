@@ -1,3 +1,5 @@
+import Aos from "aos";
+import { useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import { IoStarHalfOutline } from "react-icons/io5";
 const data = [
@@ -42,6 +44,9 @@ const data = [
 
 
 const TopProducts = () => {
+    useEffect(() =>{
+        Aos.init()
+      },[])
     return (
         <div>
             <div className="container">
@@ -55,7 +60,7 @@ const TopProducts = () => {
                 {/* body section section */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-20 place-items-center">
                     {data.map((product) => (
-                         <div key={product.id} className="max-[350px] md:w-[350px] hover:bg-black/80 dark:bg-gray-800  dark:hover:bg-primary hover:text-white relative duration-300 group  px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-xl">
+                         <div key={product.id} className="max-[350px] md:w-[350px] hover:bg-black/80 dark:bg-gray-800  dark:hover:bg-primary hover:text-white relative duration-300 group  px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-xl" data-aos="zoom-in">
                          {/* Card Image */}
                             <div>
                                  <img className="transform group-hover:scale-105 duration-300 drop-shadow-md" src={product.img} alt="" />
@@ -74,7 +79,7 @@ const TopProducts = () => {
                                         <h1 className="text-xl font-bold">{product.title}</h1>
                                         <p className="text-gray-500 group-hover:text-white duration-300 line-clamp-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, necessitatibus.</p>
                                         <div className="mt-4">
-                                        <button className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full ml-4 group-hover:bg-white group-hover:text-primary">OrderNow</button>
+                                        <button className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full group-hover:bg-white group-hover:text-primary">Order Now</button>
                                         </div>
                              </div>
                          </div>

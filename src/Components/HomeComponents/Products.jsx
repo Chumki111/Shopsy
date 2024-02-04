@@ -1,7 +1,8 @@
 
 
 import { FaStar } from "react-icons/fa";
-
+import AOS from "aos";
+import { useEffect } from "react";
 const data = [
     {
         id: 1,
@@ -67,6 +68,14 @@ const data = [
 ]
 
 const Products = () => {
+    useEffect(() =>{
+        AOS.init({
+            offset:100,
+            duration:800,
+            easing:"ease-in-sine",
+            delay:100
+        });
+    })
 
     return (
         <div className="mt-14 mb-12">
