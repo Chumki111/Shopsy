@@ -4,10 +4,17 @@ import footer from '../../assets/footer.jpg'
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
+import { useEffect } from 'react';
+import Aos from 'aos';
 const Footer = () => {
+    useEffect(() =>{
+        Aos.init()
+      },[])
     const FooterImage = {
         backgroundImage: `url(${footer})`,  // Corrected typo here
-        backgroundPosition: 'center',
+        backgroundPosition: 'bottom',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         width: '100%',
@@ -23,19 +30,34 @@ const Footer = () => {
             id: 2,
             name: 'Products',
             link: '/product'
+        },
+        {
+            id: 3,
+            name: 'Products',
+            link: '/product'
+        },
+        {
+            id: 4,
+            name: 'Products',
+            link: '/product'
+        },
+        {
+            id: 5,
+            name: 'Products',
+            link: '/product'
         }
     ]
     return (
         <div className='text-white mb-20' style={FooterImage}>
             <div className='container'>
 
-                <div className='grid md:grid-cols-3 pv-44 pt-5'>
+                <div className='grid md:grid-cols-3 pb-44 pt-5' data-aos="zoom-in">
                     {/* company details */}
                     <div className='py-8 px-4'>
                     <a href="" className="font-bold text-2xl sm:text-3xl flex gap-2">
                             <GiDiscGolfBag className="text-primary text-3xl" />Shopsy
                         </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus blanditiis ullam perferendis commodi maxime culpa?</p>
+                        <p className='py-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus blanditiis ullam perferendis commodi maxime culpa?</p>
                     </div>
                     {/* footer links */}
                     <div className='grid grid-cols-2 sm:grid-cols-3 col-span-2 am:pl-10'>
@@ -79,6 +101,17 @@ const Footer = () => {
                                 <a href="#">
                                  <FaLinkedin className='text-3xl'/>
                                 </a>
+
+                            </div>
+                            <div className='mt-6'>
+                                <div className='flex items-center gap-3 mt-3'>
+                 <FaLocationArrow />
+                 <p>Noida, Uttar Pradesh</p>
+                                </div>
+                                <div className='flex items-center gap-3 mt-3'>
+                 <FaMobileAlt />
+                 <p>+91 123456789</p>
+                                </div>
 
                             </div>
                         </div>
