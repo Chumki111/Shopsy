@@ -17,7 +17,7 @@ const Banner = () => {
     var settings = {
         dots: false,
         arrows: false,
-        Infinite: true,
+        Infinite: false,
         speed: 800,
         slidesToScroll: 1,
         autoPlay: true,

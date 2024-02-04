@@ -3,6 +3,7 @@ import Banner from "../../Components/HomeComponents/Banner";
 import Products from "../../Components/HomeComponents/Products";
 import AOS from "aos";
 import "aos/dist/aos.css"
+import TopProducts from "../../Components/HomeComponents/TopProducts";
 
 const Home = () => {
     useEffect(() =>{
@@ -18,6 +19,7 @@ const Home = () => {
             
          <Banner/>
          <Products/>
+         <TopProducts/>
         </div>
     );
 };
