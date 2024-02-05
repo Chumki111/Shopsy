@@ -14,9 +14,10 @@ const About = () => {
             <Count/>
             {/* second section */}
             <SecondSection/>
-            <LogoSection/>
+            
             {/* second paralax */}
             <SecondParalax/>
+            <LogoSection/>
             
             
             
