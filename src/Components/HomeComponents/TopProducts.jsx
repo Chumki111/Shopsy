@@ -2,6 +2,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import { IoStarHalfOutline } from "react-icons/io5";
+import SecondaryButton from "../Button/SecondaryButton";
 const data = [
 
     {
@@ -79,7 +80,7 @@ const TopProducts = () => {
                                         <h1 className="text-xl font-bold">{product.title}</h1>
                                         <p className="text-gray-500 group-hover:text-white duration-300 line-clamp-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, necessitatibus.</p>
                                         <div className="mt-4">
-                                        <button className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full group-hover:bg-white group-hover:text-primary">Order Now</button>
+                                        <SecondaryButton buttonText="Order Now"/>
                                         </div>
                              </div>
                          </div>

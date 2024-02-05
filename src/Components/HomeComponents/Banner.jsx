@@ -1,6 +1,7 @@
 import Aos from "aos";
 import { useEffect } from "react";
 import Slider from "react-slick";
+import PrimaryButton from "../Button/PrimaryButton";
 const imageList = [
     {
         id: 1,
@@ -49,7 +50,8 @@ const Banner = () => {
                                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{data.title}</h1>
                                         <p className="text-sm">{data.description}</p>
                                         <div>
-                                            <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">Order Now</button>
+                                           
+                                             <PrimaryButton buttonText={`Order Now`}/>
                                         </div>
                                     </div>
                                     {/* image section */}

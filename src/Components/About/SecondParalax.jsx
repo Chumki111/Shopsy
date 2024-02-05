@@ -2,6 +2,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
+import SecondaryButton from "../Button/SecondaryButton";
 
 
 const SecondParalax = () => {
@@ -31,8 +32,11 @@ const SecondParalax = () => {
                        Welcome to our company! We are dedicated to providing high-quality services and products to our customers.  Explore our website to learn more about our mission, values, and the exciting features we offer.
                        </p>
                    </div>
+                   <div className="group">
                    <Link to={"/products"}>
-                   <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full" data-aos="zoom-in">Shop Now</button></Link>
+                    <SecondaryButton buttonText="Shop Now"/>
+                   </Link>
+                   </div>
 
                </div>
            </div>
