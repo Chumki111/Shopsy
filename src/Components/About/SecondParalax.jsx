@@ -13,7 +13,7 @@ const SecondParalax = () => {
         <div>
         {/* first section */}
        <Parallax
-           blur={2}
+           blur={6}
            bgImage={
                "https://i.ibb.co/sHkhPJ7/woman-wearing-sport-shoes-at-home.jpg"
 
@@ -23,7 +23,7 @@ const SecondParalax = () => {
            className="w-full rounded-lg md:h-[500px] sm:h-full"
            
        >
-           <div className="hero-overlay bg-opacity-60"></div>
+           <div className="opacity-60"></div>
            <div className="text-center p-10 w-full container">
                <div className="">
                    <div className="pt-14">
