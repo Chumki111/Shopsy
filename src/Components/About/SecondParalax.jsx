@@ -2,7 +2,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
-import SecondaryButton from "../Button/SecondaryButton";
+import PrimaryButton from "../Button/PrimaryButton";
 
 
 const SecondParalax = () => {
@@ -34,7 +34,8 @@ const SecondParalax = () => {
                    </div>
                    <div className="group">
                    <Link to={"/products"}>
-                    <SecondaryButton buttonText="Shop Now"/>
+                    
+                    <PrimaryButton buttonText="Shop Now"/>
                    </Link>
                    </div>
 

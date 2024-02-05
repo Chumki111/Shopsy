@@ -1,9 +1,12 @@
-
+import PropTypes from 'prop-types'; 
 
 const PrimaryButton = ({buttonText}) => {
     return (
-        <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">{buttonText}</button>
+        <button className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full group-hover:bg-white group-hover:text-primary">{buttonText}</button>
     );
 };
 
+PrimaryButton.propTypes={
+    buttonText:PropTypes.string
+}
 export default PrimaryButton;

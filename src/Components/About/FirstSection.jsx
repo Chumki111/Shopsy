@@ -2,6 +2,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
+import PrimaryButton from "../Button/PrimaryButton";
 
 
 const FirstSection = () => {
@@ -32,8 +33,11 @@ const FirstSection = () => {
                        Innovative solutions, exceptional experiences.
                        </p>
                    </div>
+                   
                    <Link to={"/"}>
-                   <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full" data-aos="fade-up">Go To Home</button></Link>
+                    <PrimaryButton buttonText={"Go To Home"}/>
+                   </Link>
+                  
 
                </div>
            </div>
