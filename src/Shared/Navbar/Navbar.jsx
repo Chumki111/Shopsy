@@ -16,14 +16,19 @@ const Menu = [
     {
         id: 2,
         name: 'Products',
-        link: '/product'
+        link: '/products'
+    },
+    {
+        id: 3,
+        name: 'Contact Us',
+        link: '/products'
     }
 ]
 const dropDownLink = [
     {
         id:1,
-        name:'Tranding Product',
-        link:'/trandingProduct'
+        name:'About Us',
+        link:'/about'
     },
     {
         id:2,
@@ -80,7 +85,7 @@ const Navbar = () => {
                     <li className="group relative cursor-pointer">
                         <a href="#" className="flex items-center gap-[2px] py-2">
 
-                            Tranding
+                           Pages
                             <span>
                                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180"/>
                             </span>

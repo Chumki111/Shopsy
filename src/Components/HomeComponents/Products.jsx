@@ -90,12 +90,12 @@ const Products = () => {
                                     data-aos="fade-up"
                                     data-aos-delay={product.aosDelay}
 
-                                    key={product.id} className=" px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md">
+                                    key={product.id} className=" px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md dark:text-white">
                                     {/* Card Image */}
                                     <img className="w-[300px] bg-gray-400 rounded-2xl" src={product.img} alt="" />
                                     {/* Card Heading */}
                                     <div className="space-y-2">
-                                        <h2 className="text-slate-800 font-medium md:text-xl sm:text-lg pt-3">{product.title}</h2>
+                                        <h2 className="text-slate-800  dark:text-white font-medium md:text-xl sm:text-lg pt-3">{product.title}</h2>
                                         {/* rating  */}
                                         <div className="flex gap-1 text-primary py-3">
                                             <FaStar />
@@ -107,8 +107,8 @@ const Products = () => {
                                     {/* Price and action button */}
                                     <div className="mt-5 flex justify-between items-center font-medium pb-3">
 
-                                        <h2 className="md:text-xl text-gray-800">${product.newPrice}</h2>
-                                        <h2 className="md:text-xl text-gray-800 line-through">{product.prevPrice}</h2>
+                                        <h2 className="md:text-xl text-gray-800 dark:text-white">${product.newPrice}</h2>
+                                        <h2 className="md:text-xl text-gray-500 line-through">{product.prevPrice}</h2>
 
                                     </div>
                                 </div>
