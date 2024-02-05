@@ -14,8 +14,8 @@ const SecondParalax = () => {
            }
            bgImageAlt="the cat"
            strength={300}
-           className="w-full rounded-lg"
-           style={{ height: "500px" }}
+           className="w-full rounded-lg md:h-[500px] sm:h-full"
+           
        >
            <div className="hero-overlay bg-opacity-60"></div>
            <div className="text-center p-10 w-full container">
