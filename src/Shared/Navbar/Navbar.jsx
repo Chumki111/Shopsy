@@ -32,8 +32,8 @@ const dropDownLink = [
     },
     {
         id:2,
-        name:'Best Selling',
-        link:'/trandingProduct'
+        name:'FAQ',
+        link:'/faq'
     }
 ]
 const Navbar = () => {

@@ -6,23 +6,19 @@ import SecondParalax from "../../Components/About/SecondParalax";
 import SecondSection from "../../Components/About/SecondSection";
 
 
+
 const About = () => {
-    
     return (
         <div className="mb-10">
             <FirstSection/>
             <Count/>
             {/* second section */}
             <SecondSection/>
-            
             {/* second paralax */}
             <SecondParalax/>
             <LogoSection/>
-            
-            
-            
            
-        </div>
+            </div>
     );
 };
 
