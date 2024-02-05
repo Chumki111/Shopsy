@@ -4,6 +4,7 @@ import SecondParalax from "../../Components/About/SecondParalax";
 
 
 const About = () => {
+    
     return (
         <div className="mb-10">
             <FirstSection/>
