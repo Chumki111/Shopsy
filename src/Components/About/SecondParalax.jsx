@@ -10,7 +10,7 @@ const SecondParalax = () => {
         Aos.init()
       },[])
     return (
-        <div>
+        <div className="">
         {/* first section */}
        <Parallax
            blur={6}
@@ -41,6 +41,7 @@ const SecondParalax = () => {
 
                </div>
            </div>
+
 
        </Parallax>
    </div>
