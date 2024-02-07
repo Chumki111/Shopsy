@@ -1,7 +1,7 @@
 import PrimaryButton from "../../Components/Button/PrimaryButton";
 // react icons
-import { FaUserCog } from "react-icons/fa";
-import { MdOutlineMailLock } from "react-icons/md";
+import { FaPhoneVolume, FaUserCog } from "react-icons/fa";
+import { MdLocationOn, MdMarkEmailRead, MdOutlineMailLock } from "react-icons/md";
 import { BsTextareaT } from "react-icons/bs";
 import { useEffect } from "react";
 import Aos from "aos";
@@ -13,10 +13,11 @@ const Contact = () => {
     return (
         <div className="mt-12">
             <div className="container">
-                <div>
-                    <div>
-                        <h1 className="text-3xl font-semibold text-center dark:text-gray-400" data-aos="fade-up">Contact Us</h1>
-                        <p className="max-w-lg mx-auto text-center text-gray-500" data-aos="fade-up">Alternatively, you can contact us directly via email or phone using the information provided below. Our dedicated team is ready to assist you with any questions or concerns you may have.</p>
+            <h1 className="text-3xl font-semibold text-center dark:text-gray-300" data-aos="fade-up">Contact Us</h1>
+                        <p className="max-w-lg mx-auto text-center text-gray-400" data-aos="fade-up">Alternatively, you can contact us directly via email or phone using the information provided below. Our dedicated team is ready to assist you with any questions or concerns you may have.</p>
+                <div className="flex flex-col lg:flex-row mt-14 justify-between">
+                    <div className="mb-10">
+                        
                         {/* name input */}
                         <label className="relative block my-3" data-aos="fade-up">
                             <span className="sr-only">Name</span>
@@ -45,6 +46,37 @@ const Contact = () => {
                         </label>
                         <PrimaryButton buttonText="Submit"/>
                     </div>
+                    <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14548.086527789308!2d88.74528403373984!3d24.275974963495074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbf88f43fa2337%3A0xd1c1f3f01e013fa7!2sCharghat!5e0!3m2!1sen!2sbd!4v1707329786121!5m2!1sen!2sbd" height="450" allowFullScreen loading="lazy" className="w-full md:w-[600px]" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                   
+               
+                </div>
+                <div className="shadow-md dark:text-gray-300 border-b-4 border-secondary mb-12 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 py-10 gap-5">
+        <div className="text-center">
+          <div className="flex justify-center items-center">
+            <MdLocationOn className="animate-bounce text-secondary text-3xl" />
+          </div>
+          <h2 className="font-semibold text-2xl">Visit our location</h2>
+          <p>Sector-03, Dhaka-1230.</p>
+        </div>
+        <div className="text-center">
+          <div className="flex justify-center items-center">
+            <FaPhoneVolume className="animate-ping text-secondary text-3xl" />
+          </div>
+          <h2 className="font-semibold text-2xl">Contact us now</h2>
+          <p>+880-01233-456789</p>
+        </div>
+        <div className="text-center">
+          <div className="flex justify-center items-center">
+            <MdMarkEmailRead className="text-secondary text-3xl" />
+          </div>
+          <h2 className="font-semibold text-2xl">Contact us now</h2>
+          <p>chumkikhatun370@gmail.com</p>
+        </div>
+       
+      </div>
                 </div>
 
             </div>
