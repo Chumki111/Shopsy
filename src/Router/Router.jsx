@@ -5,6 +5,7 @@ import Products from "../Pages/Products/Products";
 import About from "../Pages/About/About";
 import Faq from "../Pages/Faq/Faq";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Contact from "../Pages/Contact/Contact";
 
 
 const Router = createBrowserRouter([
@@ -28,6 +29,10 @@ const Router = createBrowserRouter([
         {
           path:'/faq',
           element:<Faq/>
+        },
+        {
+          path:'/contact',
+          element:<Contact/>
         }
       ]
     },

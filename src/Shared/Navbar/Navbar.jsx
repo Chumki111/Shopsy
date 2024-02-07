@@ -21,7 +21,7 @@ const Menu = [
     {
         id: 3,
         name: 'Contact Us',
-        link: '/products'
+        link: '/contact'
     }
 ]
 const dropDownLink = [
