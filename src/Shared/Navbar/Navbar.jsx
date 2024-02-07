@@ -22,6 +22,11 @@ const Menu = [
         id: 3,
         name: 'Contact Us',
         link: '/contact'
+    },
+    {
+        id:4,
+        name:'Login',
+        link:'/login'
     }
 ]
 const dropDownLink = [
@@ -34,6 +39,11 @@ const dropDownLink = [
         id:2,
         name:'FAQ',
         link:'/faq'
+    },
+    {
+        id:3,
+        name:'Registration',
+        link:'/register'
     }
 ]
 const Navbar = () => {
