@@ -36,16 +36,19 @@ const Router = createBrowserRouter([
           path:'/contact',
           element:<Contact/>
         },
-        {
-          path:'/register',
-          element:<Register/>
-        },
-        {
-          path:'/login',
-          element:<Login/>
-        }
+        
+        
       ]
     },
+    {
+      path:'/register',
+      element:<Register/>
+    },
+    {
+      path:'/login',
+      element:<Login/>
+    }
+    
   ]);
 
 export default Router;

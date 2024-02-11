@@ -7,50 +7,56 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Aos from "aos";
 
-const Menu = [
-    {
-        id: 1,
-        name: 'Home',
-        link: '/'
-    },
-    {
-        id: 2,
-        name: 'Products',
-        link: '/products'
-    },
-    {
-        id: 3,
-        name: 'Contact Us',
-        link: '/contact'
-    },
-    {
-        id:4,
-        name:'Login',
-        link:'/login'
-    }
-]
-const dropDownLink = [
-    {
-        id:1,
-        name:'About Us',
-        link:'/about'
-    },
-    {
-        id:2,
-        name:'FAQ',
-        link:'/faq'
-    },
-    {
-        id:3,
-        name:'Registration',
-        link:'/register'
-    }
-]
+
+
 const Navbar = () => {
+    
     useEffect(() => {
         Aos.init()
     }, [])
+    const Menu = [
+        {
+            id: 1,
+            name: 'Home',
+            link: '/'
+        },
+        {
+            id: 2,
+            name: 'Products',
+            link: '/products'
+        },
+        {
+            id: 3,
+            name: 'Contact Us',
+            link: '/contact'
+        },
+        {
+            id:4,
+            name:'Login',
+            link:'/login'
+        }
+    ]
+    const dropDownLink = [
+        {
+            id:1,
+            name:'About Us',
+            link:'/about'
+        },
+        {
+            id:2,
+            name:'FAQ',
+            link:'/faq'
+        },
+        {
+            id:3,
+            name:'Registration',
+            link:'/register'
+        }
+    ]
     return (
+        <>
+        
+        
         <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
             {/* upper navbar */}
             <div className="bg-primary/40 py-2">
@@ -114,7 +120,12 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
+            
         </div>
+        
+        
+        </>
+       
     );
 };
 
