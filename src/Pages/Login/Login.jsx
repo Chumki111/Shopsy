@@ -55,7 +55,7 @@ const Login = () => {
                         </div>
                         {/* Social icons */}
                         <div className="flex justify-center space-x-4 my-2">
-                            <button aria-label="Log in with Google" className="w-1/2 border gap-2 border-primary py-2 flex rounded-full justify-center items-center">
+                            <button aria-label="Log in with Google" className="w-full md:w-1/2 border gap-2 border-primary py-2 flex rounded-full justify-center items-center">
                                 <FcGoogle className="text-2xl"/> Continue With Google
                             </button>
                             

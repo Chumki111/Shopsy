@@ -35,17 +35,20 @@ const Register = () => {
 
             </div>
             {/* image input */}
-            <div className="space-y-2 text-sm">
+            <div className="space-y-2 text-sm flex justify-center">
+              <div className="shrink-0">
+                <img className="h-16 w-16 object-cover rounded-full" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80" alt="Current profile photo" />
+              </div>
               <label htmlFor="password" className="block ">
-                Upload Your Image
+               
               </label>
-              <input type="file" name="image" id="image" placeholder="" className="w-full border border-primary/60 px-4 py-3 rounded-md file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 placeholder:italic file:text-primary hover:file:bg-violet-100" />
+              <input type="file" name="image" id="image" placeholder="" className="w-full px-4 py-3 rounded-md file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 placeholder:italic file:text-primary hover:file:bg-violet-100" />
 
             </div>
             {/* Sign in Button */}
             <button className="text-lg rounded-xl relative p-[10px] block w-full bg-primary text-white border-y-4 duration-500 overflow-hidden focus:border-primary/80 z-50 group">
               Sign Up
-             
+
             </button>
           </form>
           <div className="flex items-center pt-4 space-x-2">
@@ -54,8 +57,8 @@ const Register = () => {
             <div className="flex-1 h-px bg-gray-300"></div>
           </div>
           {/* Social icons */}
-          <div className="flex justify-center space-x-4 my-2">
-            <button aria-label="Log in with Google" className="w-1/2 border gap-2 border-primary py-2 flex rounded-full justify-center items-center">
+          <div className="flex justify-center space-x-4 my-3">
+            <button aria-label="Log in with Google" className="w-full md:w-1/2 border gap-2 border-primary py-2 flex rounded-full justify-center items-center">
               <FcGoogle className="text-2xl" /> Continue With Google
             </button>
 
