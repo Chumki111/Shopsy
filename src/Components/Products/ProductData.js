@@ -19,7 +19,17 @@ export const products = [
 
     },
     {
+        company :"Salomon",
+      
+
+    },
+    {
         company :"Puma",
+       
+
+    },
+    {
+        company :"Reebok",
        
 
     }
