@@ -88,8 +88,10 @@ const Navbar = () => {
                             <div>
                                 <DarkMode />
                             </div>
+                            
                         </div>
                     </div>
+                    
                 </div>
                 {/* lower navbar */}
                 <div className="flex justify-end md:justify-center">
