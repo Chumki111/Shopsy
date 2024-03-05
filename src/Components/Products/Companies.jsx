@@ -6,7 +6,7 @@ import { products } from "./ProductData";
 function Companies() {
     const [params,setParams] = useSearchParams();
     const company = params.get('company');
-    console.log(company);
+    // console.log(company);
     
 
   return (

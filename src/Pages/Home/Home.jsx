@@ -7,12 +7,13 @@ import TopProducts from "../../Components/HomeComponents/TopProducts";
 import Sale from "../../Components/HomeComponents/Sale";
 import Subscribe from "../../Components/HomeComponents/Subscribe";
 import Testimonials from "../../Components/HomeComponents/Testimonials";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
    
     return (
         <div>
-            
+            <Helmet><title>Shopsy</title></Helmet>
          <Banner/>
          <Products/>
          <TopProducts/>

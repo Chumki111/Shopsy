@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import PrimaryButton from "../Button/PrimaryButton";
+import { Link } from "react-router-dom";
 
 
 
@@ -30,7 +31,9 @@ const Product = ({ product }) => {
 
                 </div>
                 <div className="flex justify-center">
+                    <Link to={`/product/${product?.id}`}>
                     <PrimaryButton buttonText={"View Details"}/>
+                    </Link>
                 </div>
             </div>
         

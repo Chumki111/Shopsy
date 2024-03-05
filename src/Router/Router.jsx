@@ -8,6 +8,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Contact from "../Pages/Contact/Contact";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
+import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 
 
 const Router = createBrowserRouter([
@@ -23,6 +24,10 @@ const Router = createBrowserRouter([
         {
           path:'/products',
           element:<Products/>
+        },
+        {
+          path:'/product/:id',
+          element:<ProductDetails/>
         },
         {
           path:'/about',
