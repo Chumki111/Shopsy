@@ -31,7 +31,7 @@ const Product = ({ product }) => {
 
                 </div>
                 <div className="flex justify-center">
-                    <Link to={`/product/${product?.id}`}>
+                    <Link to={`/product/${product?._id}`}>
                     <PrimaryButton buttonText={"View Details"}/>
                     </Link>
                 </div>

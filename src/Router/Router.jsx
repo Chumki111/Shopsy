@@ -9,6 +9,7 @@ import Contact from "../Pages/Contact/Contact";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
+import { getSingleRoom } from "../api/products";
 
 
 const Router = createBrowserRouter([
@@ -27,7 +28,8 @@ const Router = createBrowserRouter([
         },
         {
           path:'/product/:id',
-          element:<ProductDetails/>
+          element:<ProductDetails/>,
+          // loader:({params}) =>getSingleRoom(params.id)
         },
         {
           path:'/about',

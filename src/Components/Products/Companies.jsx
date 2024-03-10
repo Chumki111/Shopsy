@@ -10,8 +10,8 @@ function Companies() {
     
 
   return (
-    <div className="container"> 
-     <div className="pt-4 flex justify-center items-center overflow-x-auto">
+    <div className=""> 
+     <div className="py-4 flex justify-center items-center overflow-x-auto container">
         {products?.map(item => <Company key={item.company} label={item.company} selected={company === item.company}/>)}
         </div>
         </div>
