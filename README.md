@@ -29,12 +29,12 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Chumki111/Blood-Donation.git
+    git clone https://github.com/Chumki111/Shopsy.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd blood-unity
+    cd Shopsy
     ```
 
 3. Install dependencies using npm or yarn:
