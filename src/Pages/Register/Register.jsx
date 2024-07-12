@@ -3,6 +3,15 @@ import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  const handleSubmit =async(event) =>{
+   event.preventDefault();
+   const form = event.target;
+   const name = form.name.value;
+   const email = form.email.value;
+   const password = form.password.value;
+   const image = form.image.files[0]
+   console.log(name,email,password,image);
+  }
   return (
     <div className="mt-10">
       <Link to="/"> <h2 className="text-xl font-semibold px-4 py-2 md:w-1/5 mb-3 lg:w-1/6 rounded-lg ml-3 flex gap-2 items-center cursor-pointer hover:bg-primary/60 hover:text-white">Back to Home <FaArrowLeft className="text-primary mr-4 " /></h2></Link>
@@ -12,7 +21,7 @@ const Register = () => {
         <div>
           {/* Input fields and the form started */}
           {/* name input */}
-          <form action="" className="space-y-6">
+          <form action="" className="space-y-6" onSubmit={handleSubmit}>
             <div className="space-y-2 text-sm">
               <label htmlFor="username" className="block ">
                 Your Name

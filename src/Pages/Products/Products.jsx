@@ -31,7 +31,7 @@ const Products = () => {
 
             })
     }, [company])
-    if (loading) return <Loader />
+    // if (loading) return <Loader />
     return (
         <div>
             <FirstSection />
